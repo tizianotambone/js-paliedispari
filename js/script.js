@@ -10,13 +10,13 @@ function palindroma(words){
     let parolaInvertita = "";
 
     // ciclo partendo dall'ultima posizione della parola che viene dall'argomento della funzione (words)
-    for (let i = words.length -1;  i>0; i--) {
+    for (let i = words.length -1;  i >= 0; i--) {
 
-        parolaInvertita = words[i]
+        parolaInvertita += words[i]
         console.log('nel ciclo', parolaInvertita)
     }
 
-    console.log('fuori dal ciclo', parolaInvertita)
+    // console.log('fuori dal ciclo', parolaInvertita)
     return words === parolaInvertita;
 }
 
