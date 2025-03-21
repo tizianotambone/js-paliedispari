@@ -4,7 +4,7 @@
 let parolainvertita = prompt("inserisci una parola");
 
 function palindroma(words){
-    // let parolaInvertita = words.split("").reverse().join("");
+   
 
     // inizializzo una variabile
     let parolaInvertita = "";
@@ -28,7 +28,48 @@ else{
     console.log("parola non palindroma")
 }
 
-        
+// ESERCIZIO NUMERO 2
+
+let number= prompt("inserisci un numero")
+let select= prompt("scegli pari o dispari")
+let pc = random(1, 5)
+
+let somma=(number+ pc)
+
+let risultato= pariDispari(somma)
+console.log(risultato)
+
+if(select==risultato){
+    console.log("hai vinto")
+}
+else{
+    console.log("hai perso")
+}
+
+
+
+
+// funzioni 
+function random(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+  }
+       
+function pariDispari(numero){
+    if(numero%2==0){
+       return "pari"
+    }
+    else{
+         return "dispari"
+    }
+    
+    
+    
+}
+
+
+
+
+
         
     
 
